@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - Khiva IMI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Khiva<span>Admin</span></div>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <h2>Yangilik qo'shish</h2>
+    <form id="news-form">
+      <input type="text" id="title" placeholder="Sarlavha" required/>
+      <textarea id="content" placeholder="Yangilik matni..." required></textarea>
+      <button type="submit">Saqlash</button>
+    </form>
+  </main>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
